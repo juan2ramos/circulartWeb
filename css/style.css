@@ -1,0 +1,165 @@
+/* 
+    Document   : style
+    Created on : 25/04/2014, 18:06:43
+    Author     : Juan Ramos
+
+*/
+
+a {
+    text-decoration: none;
+}
+
+body {
+
+    background: #dbd5cc;
+    font-family: 'coolveticaregular', sans-serif;
+    font-size: 16px;
+}
+
+body, h2, h3, h4, p {
+    font-weight: 300
+}
+
+*:focus {
+    outline: 0;
+}
+
+li {
+    list-style: none;
+}
+
+h1, h2, h3, ul {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    margin: 0 auto;
+    width: 960px;
+}
+
+/*=================================================================
+header
+===================================================================*/
+header {
+    background: #48463f;
+    margin: 10px 0;
+    width: 90%;
+    padding-top: 350px;
+
+}
+
+
+#contend-logo{
+    position: relative;
+    width: 80%;
+}
+#header-buttom img{
+ max-width: 85%;
+}
+#logo {
+    background: #94b4a4;
+    border-left: 2px #fff solid;
+    border-top: 2px #fff solid;
+    border-bottom: 2px #fff solid;
+    color: #48463f;
+    font-size: 3.5em;
+    position: relative;
+    text-align: right;
+    width: 100%;
+}
+#logo span{
+    color: #3e8f9a;
+}
+#logo-circulart{
+    border: solid #fff;
+    border-radius: 50%;
+    background: #94b4a4;
+    right: -117px;
+    padding: 20px 22px 20px 18px;
+    position: absolute;
+    top: -32px;
+}
+/*=================================================================
+Nav
+===================================================================*/
+nav{
+    position: relative;
+}
+
+nav a {
+    background: #fff;
+    color: #48463f;;
+    font-size: 1.4em;
+    font-weight: lighter;
+    padding: 0 2px;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: #C4D545
+}
+
+nav li {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+}
+
+nav span {
+    padding: 0 2px;
+}
+#network{
+    background: #48463f;
+    -webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;
+    position: absolute;
+    text-align: right;
+    top: 25px;
+    padding-right: 2px;
+    width: 90%;
+    z-index: -1
+}
+#network a{
+    background: none;
+    display: block;
+    padding: 5px 1px 0;
+}
+
+
+#network img{
+    max-width: 40px;
+}
+.active{
+    background: #be6b50;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+/*=================================================================
+Footer
+===================================================================*/
+footer {
+    background: #48463f;
+    margin: 0 ;
+    width: 90%
+}
+
+
+
+footer a {
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}
+#nav-footer {
+    padding:90px 90px 60px;
+}
+#nav-footer img{
+    max-height: 50px
+}
+
+#nav-footer li {
+    display: inline-block;
+    margin: 5px 10px;
+}
