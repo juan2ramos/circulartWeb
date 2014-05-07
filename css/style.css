@@ -4,6 +4,43 @@
     Author     : Juan Ramos
 
 */
+@font-face {
+    font-family: 'icomoon';
+    src:url('fonts/icomoon.eot?-srhekv');
+    src:url('fonts/icomoon.eot?#iefix-srhekv') format('embedded-opentype'),
+    url('fonts/icomoon.woff?-srhekv') format('woff'),
+    url('fonts/icomoon.ttf?-srhekv') format('truetype'),
+    url('fonts/icomoon.svg?-srhekv#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-uniE603:before {
+    content: "\e603";
+}
+.icon-facebook:before {
+    content: "\e600";
+}
+.icon-twitter:before {
+    content: "\e601";
+}
+.icon-pinterest:before {
+    content: "\e602";
+}
 
 a {
     text-decoration: none;
@@ -12,7 +49,7 @@ a {
 body {
 
     background: #dbd5cc;
-    font-family: 'coolveticaregular', sans-serif;
+        font-family: 'coolveticaregular', sans-serif;
     font-size: 16px;
 }
 
@@ -42,62 +79,72 @@ section {
 header
 ===================================================================*/
 header {
-    background: #48463f;
-    margin: 10px 0;
-    width: 90%;
-    padding-top: 350px;
 
+    margin: 10px 0;
+    position: relative;
 }
 
 
 #contend-logo{
-    position: relative;
-    width: 80%;
+    position: absolute;
+    width: 902px;
+    top: 407px;
 }
 #header-buttom img{
- max-width: 85%;
+    width: 1060px;
 }
-#logo {
-    background: #94b4a4;
-    border-left: 2px #fff solid;
-    border-top: 2px #fff solid;
-    border-bottom: 2px #fff solid;
+.logo {
+
+    border-left: 3px #fff solid;
+    border-top: 3px #fff solid;
+    border-bottom: 3px #fff solid;
     color: #48463f;
-    font-size: 3.5em;
+    height: 80px;
     position: relative;
-    text-align: right;
-    width: 100%;
 }
-#logo span{
-    color: #3e8f9a;
+.logo img{
+    position: absolute;
+    right: -20px;
+    top: 3px;
 }
-#logo-circulart{
+.logo-circulart{
     border: solid #fff;
     border-radius: 50%;
-    background: #94b4a4;
-    right: -117px;
-    padding: 20px 22px 20px 18px;
+    background: #BFC823;
+    right: -143px;
+    padding: 35px 40px 35px 30px;
     position: absolute;
-    top: -32px;
+    top: -40px;
+}
+.logo-circulart img{
+    width: 80px;
+}
+.que-es{
+    background: #00A8A6;
+}
+.portafolio{
+    background: #BFC823;
 }
 /*=================================================================
 Nav
 ===================================================================*/
-nav{
-    position: relative;
+nav > ul{
+    width: 1060px;
 }
 
 nav a {
-    background: #fff;
+
     color: #48463f;;
-    font-size: 1.4em;
+    display: block;
+    font-size: 1em;
     font-weight: lighter;
-    padding: 0 2px;
+    padding: 10px 30px;
     text-transform: uppercase;
 }
 
 nav a:hover {
-    color: #C4D545
+    border-bottom: 5px solid #be6b50;
+    color: #be6b50;
 }
 
 nav li {
@@ -106,33 +153,54 @@ nav li {
     text-align: left;
 }
 
-nav span {
-    padding: 0 2px;
-}
+
 #network{
     background: #48463f;
     -webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;
-    position: absolute;
     text-align: right;
-    top: 25px;
-    padding-right: 2px;
-    width: 90%;
-    z-index: -1
+    padding-right: 4px;
+    width: 1060px;
 }
+
 #network a{
-    background: none;
-    display: block;
-    padding: 5px 1px 0;
+     -webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;
+     font-size: 1.8em;
+     height: 40px;
+     line-height: 0;
+     padding: 7px 0 0;
+     text-align: center;
+     width: 40px;
+ }
+#network a:hover {
+    color: #be6b50;
+    border: none;
 }
-
-
+#network li{
+    padding: 6px 1px;
+}
+#youtube a{
+    background: #DBD5CC;
+    color: #EA202C;
+    padding-left: 4px
+}
+#facebook a{
+    background: #BFC823;
+    color: #48463F;
+}
+#twitter a{
+    background: #3E8F9A;
+    color: #48463F;
+}
+#pinterest a{
+    background: #F27227;
+    color: #48463F;
+}
 #network img{
     max-width: 40px;
 }
 .active{
-    background: #be6b50;
-    color: #fff;
-    font-weight: bold;
+    border-bottom: 5px solid #be6b50;
+
 }
 
 
@@ -142,7 +210,7 @@ Footer
 footer {
     background: #48463f;
     margin: 0 ;
-    width: 90%
+    width: 1060px
 }
 
 
@@ -153,7 +221,7 @@ footer a {
     text-transform: uppercase;
 }
 #nav-footer {
-    padding:90px 90px 60px;
+    padding:60px 20px 40px;
 }
 #nav-footer img{
     max-height: 50px
