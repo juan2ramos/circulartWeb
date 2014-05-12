@@ -22,9 +22,9 @@
             context.canvas.width = window.innerWidth-20;
             context.beginPath();
             context.moveTo(0, 10);
-            context.lineTo(500, 10);
-            context.lineTo(1020, 80);
-            context.lineTo(window.innerWidth-20, 20);
+            context.lineTo(200, 100);
+            context.lineTo(240, 50);
+            context.lineTo(window.innerWidth-20, 50);
 
             context.stroke();
         }

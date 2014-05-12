@@ -19,7 +19,6 @@ try{
     $fileName = ROOT . 'views' . DS . $url . '.php' ;
 
     if(is_readable($fileName)){
-
         $title = str_replace("-", " ", $url);
         require_once ROOT . 'layout' .DS . 'default.php';
     }else{

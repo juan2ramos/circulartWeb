@@ -58,12 +58,12 @@
 </header>
 <nav>
     <ul>
-        <li><a href="que-es" class="active">qué es?</a></li>
-        <li><a href="portafolios">portafolios artistas</a></li>
-        <li><a href="mercado">Mercado</a></li>
-        <li><a href="radio">circulart radio</a></li>
-        <li><a href="noticias">noticias</a></li>
-        <li><a href="contacto">contacto</a></li>
+        <li><a href="que-es" class="<?php if($url == 'que-es'): echo('active'); endif ?>">qué es?</a></li>
+        <li><a href="portafolio" class="<?php if($url == 'portafolio'): echo('active'); endif  ?>"">portafolios artistas</a></li>
+        <li><a href="http://redlat.org/circulart2014" >Mercado</a></li>
+        <li><a href="#">circulart radio</a></li>
+        <li><a href="noticias" class="<?php if($url == 'noticias'): echo('active'); endif  ?>">noticias</a></li>
+        <li><a href="contacto" class="<?php if($url == 'contacto'): echo('active'); endif  ?>">contacto</a></li>
     </ul>
     <div id="network">
         <ul>
