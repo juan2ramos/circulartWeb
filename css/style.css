@@ -80,9 +80,8 @@ section {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    margin: 0;
-    padding-left: 20px;
-    width: 100%;
+    margin: 0 auto;
+    width: 1060px;
 }
 
 h2 {
@@ -98,8 +97,9 @@ header
 ===================================================================*/
 header {
 
-    margin: 10px 0;
+    margin: 10px auto;
     position: relative;
+    width: 1060px
 }
 
 #contend-logo {
@@ -146,6 +146,7 @@ header {
 Nav
 ===================================================================*/
 nav > ul {
+    margin: 0 auto;
     width: 1060px;
 }
 
@@ -175,6 +176,7 @@ nav li {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    margin: 0 auto;
     text-align: right;
     padding-right: 4px;
     width: 1060px;
@@ -237,7 +239,7 @@ Footer
 footer {
     background: #48463f;
     clear: both;
-    margin: 200px 0 0;
+    margin: 200px auto;
     width: 1060px
 }
 
